@@ -4,7 +4,7 @@ import Foundation
 
 @objc(CapacitorPedometerPlugin)
 public class CapacitorPedometerPlugin: CAPPlugin, CAPBridgedPlugin {
-    private let PLUGIN_VERSION: String = "7.0.1"
+    private let PLUGIN_VERSION: String = "7.0.2"
     public let identifier = "CapacitorPedometerPlugin"
     public let jsName = "CapacitorPedometer"
     public let pluginMethods: [CAPPluginMethod] = [
