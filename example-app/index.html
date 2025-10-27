@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@capgo/capacitor-pedometer Example</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>@capgo/capacitor-pedometer Example</h1>
+      <p class="lead">
+        Track steps, distance, pace, cadence, and floor data from the native pedometer. Start continuous updates or
+        query historical data.
+      </p>
+
+      <div class="status-grid">
+        <div class="status-card">
+          <h2>Features Available</h2>
+          <p id="availability">Checking...</p>
+        </div>
+        <div class="status-card">
+          <h2>Permission</h2>
+          <p id="permission">Checking...</p>
+        </div>
+      </div>
+
+      <div class="measurement-display" id="measurement">No data yet.</div>
+
+      <div class="actions">
+        <button id="start-updates">Start Updates</button>
+        <button id="stop-updates" class="secondary" disabled>Stop Updates</button>
+        <button id="read-once" class="secondary">Query Last 24h</button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

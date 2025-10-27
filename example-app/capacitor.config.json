@@ -1,0 +1,10 @@
+{
+  "appId": "app.capgo.pedometer",
+  "appName": "Pedometer Example",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}

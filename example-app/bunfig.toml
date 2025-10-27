@@ -1,0 +1,5 @@
+[install]
+production = false
+
+[install.scopes]
+"@capgo" = { linker = "isolated" }
