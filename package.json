@@ -1,6 +1,6 @@
 {
   "name": "@capgo/capacitor-pedometer",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "Capacitor plugin for accessing pedometer data including steps, distance, pace, cadence, and floors",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
