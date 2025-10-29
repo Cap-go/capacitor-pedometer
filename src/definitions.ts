@@ -64,6 +64,14 @@ export interface CapacitorPedometerPlugin {
    * @since 0.0.1
    */
   removeAllListeners(): Promise<void>;
+
+  /**
+   * Get the native Capacitor plugin version.
+   *
+   * @returns Promise that resolves with the plugin version
+   * @since 1.0.0
+   */
+  getPluginVersion(): Promise<{ version: string }>;
 }
 
 /**
