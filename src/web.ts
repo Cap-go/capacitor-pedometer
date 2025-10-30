@@ -38,4 +38,7 @@ export class CapacitorPedometerWeb extends WebPlugin implements CapacitorPedomet
   async requestPermissions(): Promise<PermissionStatus> {
     throw this.unimplemented('Not implemented on web.');
   }
+  async getPluginVersion(): Promise<{ version: string }> {
+    return { version: 'web' };
+  }
 }
