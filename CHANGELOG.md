@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.2.0](https://github.com/Cap-go/capacitor-pedometer/compare/7.1.0...7.2.0) (2025-10-30)
+
+
+### Features
+
+* add getPluginVersion method to CapacitorPedometerWeb class ([adf4dce](https://github.com/Cap-go/capacitor-pedometer/commit/adf4dcee6b1b08fcc630e00cf9df7f0b90c6d2fe))
+
 ## [7.1.0](https://github.com/Cap-go/capacitor-pedometer/compare/7.0.2...7.1.0) (2025-10-29)
 
 
