@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.2.1](https://github.com/Cap-go/capacitor-pedometer/compare/7.2.0...7.2.1) (2025-10-30)
+
+
+### Bug Fixes
+
+* pluginVersion lint issue ([8198ea2](https://github.com/Cap-go/capacitor-pedometer/commit/8198ea2a97e0753e0847922c7834f9325c16ffbf))
+
 ## [7.2.0](https://github.com/Cap-go/capacitor-pedometer/compare/7.1.0...7.2.0) (2025-10-30)
 
 
