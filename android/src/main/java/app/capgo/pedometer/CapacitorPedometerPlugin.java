@@ -24,7 +24,7 @@ import com.getcapacitor.annotation.PermissionCallback;
 )
 public class CapacitorPedometerPlugin extends Plugin implements SensorEventListener {
 
-    private final String pluginVersion = "7.2.4";
+    private final String pluginVersion = "7.2.5";
     private static final String PERMISSION_GRANTED = "granted";
     private static final String PERMISSION_DENIED = "denied";
     private static final String PERMISSION_PROMPT = "prompt";
