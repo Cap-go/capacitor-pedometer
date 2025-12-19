@@ -128,20 +128,16 @@ public class CapacitorPedometerPlugin: CAPPlugin, CAPBridgedPlugin {
             return "denied"
         }
 
-        if #available(iOS 11.0, *) {
-            switch CMMotionActivityManager.authorizationStatus() {
-            case .authorized:
-                return "granted"
-            case .denied, .restricted:
-                return "denied"
-            case .notDetermined:
-                return "prompt"
-            @unknown default:
-                return "prompt"
-            }
+        switch CMMotionActivityManager.authorizationStatus() {
+        case .authorized:
+            return "granted"
+        case .denied, .restricted:
+            return "denied"
+        case .notDetermined:
+            return "prompt"
+        @unknown default:
+            return "prompt"
         }
-
-        return "granted"
     }
 
     private func createMeasurementDict(from data: CMPedometerData, startDate: Date, endDate: Date) -> [String: Any] {
@@ -161,20 +157,16 @@ public class CapacitorPedometerPlugin: CAPPlugin, CAPBridgedPlugin {
             measurement["floorsDescended"] = floorsDescended.intValue
         }
 
-        if #available(iOS 9.0, *) {
-            if let currentPace = data.currentPace {
-                measurement["currentPace"] = currentPace.doubleValue
-            }
-
-            if let currentCadence = data.currentCadence {
-                measurement["currentCadence"] = currentCadence.doubleValue
-            }
+        if let currentPace = data.currentPace {
+            measurement["currentPace"] = currentPace.doubleValue
         }
 
-        if #available(iOS 10.0, *) {
-            if let averageActivePace = data.averageActivePace {
-                measurement["averageActivePace"] = averageActivePace.doubleValue
-            }
+        if let currentCadence = data.currentCadence {
+            measurement["currentCadence"] = currentCadence.doubleValue
+        }
+
+        if let averageActivePace = data.averageActivePace {
+            measurement["averageActivePace"] = averageActivePace.doubleValue
         }
 
         measurement["startDate"] = Int(startDate.timeIntervalSince1970 * 1000)
