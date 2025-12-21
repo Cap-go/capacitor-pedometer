@@ -119,13 +119,6 @@ public class CapacitorPedometerPlugin extends Plugin implements SensorEventListe
     }
 
     @PluginMethod
-    public void checkPermissions(PluginCall call) {
-        JSObject result = new JSObject();
-        result.put("activityRecognition", getPermissionState());
-        call.resolve(result);
-    }
-
-    @PluginMethod
     public void requestPermissions(PluginCall call) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             if (getPermissionState(Manifest.permission.ACTIVITY_RECOGNITION) != PermissionState.GRANTED) {
