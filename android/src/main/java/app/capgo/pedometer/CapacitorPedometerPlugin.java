@@ -121,7 +121,7 @@ public class CapacitorPedometerPlugin extends Plugin implements SensorEventListe
     @PluginMethod
     public void requestPermissions(PluginCall call) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            if (getPermissionState(Manifest.permission.ACTIVITY_RECOGNITION) != PermissionState.GRANTED) {
+            if (getPermissionState("activityRecognition") != PermissionState.GRANTED) {
                 requestPermissionForAlias("activityRecognition", call, "permissionCallback");
             } else {
                 JSObject result = new JSObject();
@@ -206,14 +206,17 @@ public class CapacitorPedometerPlugin extends Plugin implements SensorEventListe
 
     private boolean hasActivityRecognitionPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            return getPermissionState(Manifest.permission.ACTIVITY_RECOGNITION) == PermissionState.GRANTED;
+            return getPermissionState("activityRecognition") == PermissionState.GRANTED;
         }
         return true; // No permission needed on older Android versions
     }
 
     private String getPermissionState() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            PermissionState state = getPermissionState(Manifest.permission.ACTIVITY_RECOGNITION);
+            PermissionState state = getPermissionState("activityRecognition");
+            if (state == null) {
+                return PERMISSION_PROMPT;
+            }
             switch (state) {
                 case GRANTED:
                     return PERMISSION_GRANTED;
