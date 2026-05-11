@@ -1,5 +1,7 @@
 # @capgo/capacitor-pedometer
 
+<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-pedometer" alt="Capgo - Instant updates for Capacitor" /></a>
+
 Capacitor plugin for accessing pedometer data including steps, distance, pace, cadence, and floors.
 
 ## Compatibility
