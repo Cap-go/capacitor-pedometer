@@ -4,7 +4,7 @@ import pkg from './package.json';
 
 const config: CapacitorConfig = {
   appId: 'app.capgo.pedometer',
-  appName: 'Pedometer Example',
+  appName: '@capgo/capacitor-pedometer',
   webDir: 'dist',
   plugins: {
     SplashScreen: {
