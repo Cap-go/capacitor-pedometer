@@ -1,5 +1,6 @@
 [install]
 production = false
+minimumReleaseAge = 604800
 
 [install.scopes]
 "@capgo" = { linker = "isolated" }
