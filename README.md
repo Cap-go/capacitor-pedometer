@@ -18,7 +18,7 @@ Count steps in your Capacitor app with the device motion sensors: live step upda
 ## Key features
 
 - **Live updates**: `startMeasurementUpdates()` streams the `measurement` event, `stopMeasurementUpdates()` ends it.
-- **History**: `getMeasurement()` returns steps for a time range.
+- **History on iOS**: `getMeasurement()` returns steps for a time range.
 - **Rich data on iOS**: distance, pace, cadence and floors ascended or descended from Core Motion.
 - **Availability**: `isAvailable()` tells you which metrics the device supports.
 - **Permissions**: motion permission on iOS and `ACTIVITY_RECOGNITION` on Android.
