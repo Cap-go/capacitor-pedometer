@@ -1,8 +1,28 @@
 # @capgo/capacitor-pedometer
 
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-pedometer" alt="Capgo - Instant updates for Capacitor" /></a>
+Count steps in your Capacitor app with the device motion sensors: live step updates and history queries for fitness, health and challenge apps.
 
-Capacitor plugin for accessing pedometer data including steps, distance, pace, cadence, and floors.
+<a href="https://capgo.app/?ref=plugin_pedometer"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-pedometer" alt="Capgo - Instant updates for Capacitor" /></a>
+
+<div align="center">
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_pedometer">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_pedometer">Missing a feature? We'll build the plugin for you 💪</a></p>
+</div>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-pedometer/main/assets/github-social-preview.png" alt="@capgo/capacitor-pedometer for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **Live updates**: `startMeasurementUpdates()` streams the `measurement` event, `stopMeasurementUpdates()` ends it.
+- **History**: `getMeasurement()` returns steps for a time range.
+- **Rich data on iOS**: distance, pace, cadence and floors ascended or descended from Core Motion.
+- **Availability**: `isAvailable()` tells you which metrics the device supports.
+- **Permissions**: motion permission on iOS and `ACTIVITY_RECOGNITION` on Android.
+- **Platforms**: iOS and Android. Android counts steps with the step sensor. Not available on web.
 
 ## Compatibility
 
